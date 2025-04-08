@@ -39,9 +39,9 @@ const { name } = require('ejs');
 // const dbUrl= process.env.DB_URL
 // 'mongodb://127.0.0.1:27017/yelp-camp'
 
-//const dbUrl = `mongodb+srv://gurmitmahal18:${encodeURIComponent('ranasingh45')}@cluster0.lktcp.mongodb.net/Yelpcamp?retryWrites=true&w=majority&appName=Cluster0`;
+const dbUrl = `mongodb+srv://gurmitmahal18:${encodeURIComponent('ranasingh45')}@cluster0.lktcp.mongodb.net/Yelpcamp?retryWrites=true&w=majority&appName=Cluster0`;
 
-const dbUrl= 'mongodb://127.0.0.1:27017/yelp-camp';
+//const dbUrl= 'mongodb://127.0.0.1:27017/yelp-camp';
 const connectDB = async () => {
   try {
     await mongoose.connect(dbUrl);
